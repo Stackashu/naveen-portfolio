@@ -1,7 +1,7 @@
 /* bitter */
 @import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap");
 /* Roboto */
-@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?amily=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   --primary-color: #000;
   --secondary-color: #001d36;
@@ -36,6 +36,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--secondary-font);
 }
 
 html,

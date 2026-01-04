@@ -2,26 +2,96 @@
   width: 100%;
   height: 100vh;
   position: relative;
-  padding: var(--xl-padding);
+  padding: var(--lg-padding);
 }
 
 .logo {
   position: absolute;
-  width: 125px;
-  height: 125px;
+  width: 150px;
+  height: 150px;
   top: 30px;
   left: 40px;
 }
 
-.innerDiv{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: blue;
+.innerDiv {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: blue; */
 }
-.leftBox{
-    width: 50%;
+.leftBox {
+  width: 50%;
+  height: 100%;
+  display: flex;
+
+  align-items: end;
+  justify-content: end;
 }
+.leftBCon {
+  /* background-color: yellow; */
+  padding: var(--md-padding);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* height: 100%; */
+}
+.topBCont {
+  position: relative;
+}
+.name {
+  font-size: 4vw;
+  line-height: 2.5vw;
+  font-weight: 900;
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+}
+.designation {
+  font-size: 2.8vw;
+  font-weight: 900;
+  letter-spacing: -0.2vw;
+  color: var(--tertiary-color);
+}
+.left_arrow {
+  width: 15%;
+  position: absolute;
+  top: -10%;
+  right: 20%;
+  animation: arrowBounce 3s infinite;
+  transform-origin: center;
+}
+
+@keyframes arrowBounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px) rotateZ(10deg);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.midBCont {
+  width: 68%;
+  text-wrap: wrap;
+  background-color: var(--secondary-color);
+  padding: var(--sm-padding);
+  border-radius: 20px 20px 0 0;
+}
+.midBCont p {
+  color: white;
+  font-size: 1.1vw;
+  font-weight: 10;
+}
+.blueLine {
+  width: 70%;
+  background-color: var(--tertiary-color);
+  height: 3px;
+}
+
 .myImage {
   position: absolute;
   left: 50%;
@@ -37,4 +107,162 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.lastBCont {
+  margin-top: 1.8vw;
+  background-color: var(--secondary-color);
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.lastBCont h2 {
+  transition: ease 0.5s all;
+  color: white;
+  font-size: 1.05vw;
+  font-style: italic;
+  font-weight: 200;
+  padding: 0.5vw var(--sm-padding);
+}
+
+.circle {
+  /* width: 100%; */
+  height: 40px;
+  width: 40px;
+  border-radius: 25px;
+  background-color: var(--tertiary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circleIn {
+  transition: ease 0.5s all;
+
+  height: 25px;
+  width: 25px;
+  border-radius: 25px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circleIn1 {
+  height: 22px;
+  width: 22px;
+  border-radius: 25px;
+  background-color: var(--tertiary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circleIn2 {
+  height: 15px;
+  width: 15px;
+  border-radius: 25px;
+  background-color: white;
+}
+
+
+.lastBCont:hover h2{
+transform: translateX(20px);
+}
+
+.lastBCont:hover .circleIn{
+  transform: scale(1.1);
+  }
+
+.rightBox {
+  height: 100%;
+  /* background: #000; */
+  width: 50%;
+}
+
+.rightBCont {
+  margin-top: 3vw;
+  height: 100%;
+  /* background-color: yellow; */
+  /* padding:  var(--md-padding); */
+  padding-left: 10vw;
+  gap: 4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.topRight {
+  /* background: #000; */
+  width: 50%;
+  /* padding: var(--lg-padding); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3.6vw;
+}
+
+.topRight img {
+  width: 35%;
+  cursor: pointer;
+}
+
+.bottomRight {
+  /* background: yellow; */
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+.arrow_up {
+  width: 15%;
+  animation: arrowUpBounce 5s infinite;
+}
+@keyframes arrowUpBounce {
+  0% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+
+.button h1{
+  font-size: 1.5vw;
+}
+
+.buttonIn{
+  border-radius: 25px;
+  border: 1px solid black;
+  padding: 5px 30px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.buttonIn h1{
+  font-size: 1vw;
+  font-weight: 300;
+}
+
+.buttonIn:hover{
+  background: var(--secondary-color);
+  color: white;
 }

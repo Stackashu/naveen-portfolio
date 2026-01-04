@@ -1,0 +1,49 @@
+/* bitter */
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap");
+/* Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --primary-color: #000;
+  --secondary-color: #001d36;
+  --tertiary-color: #31a8ff;
+
+  /* text style  */
+  --primary-font: "Bitter", serif;
+  --secondary-font: "Roboto", sans-serif;
+
+  /* Text color  */
+  --textCol-primary: white;
+
+  /* padding  */
+  --sm-padding: 1vw;
+  --md-padding: 2vw;
+  --lg-padding: 3vw;
+  --xl-padding: 5vw;
+
+  /* margin  */
+  --sm-margin: 1vw;
+  --md-margin: 2vw;
+  --lg-margin: 3vw;
+  --xl-margin: 5vw;
+
+  /* font size  */
+  --sm-font-size: 1vw;
+  --md-font-size: 2vw;
+  --lg-font-size: 3vw;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/SVG/bg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

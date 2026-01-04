@@ -1,0 +1,40 @@
+.outerDiv {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: var(--xl-padding);
+}
+
+.logo {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  top: 30px;
+  left: 40px;
+}
+
+.innerDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: blue;
+}
+.leftBox{
+    width: 50%;
+}
+.myImage {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 50%;
+  height: 90vh;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.myImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -4,7 +4,7 @@ import Career from "./sections/career";
 const App = () => {
   return (
     <div>
-      <Home />
+      {/* <Home /> */}
       <Career/>
     </div>
   );

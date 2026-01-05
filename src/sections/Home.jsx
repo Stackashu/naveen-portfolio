@@ -3,11 +3,12 @@ import styles from "../styles/Home.module.css";
 import logo from "../assets/SVG/logo.svg";
 import myImage from "../assets/SVG/myImage.png";
 import leftArrow from "../assets/SVG/leftArrow.svg";
-import blueArrrowUp from "../assets/SVG/up_blue_arrow.svg"
-import Ps from "../assets/SVG/ps.svg"
-import Ae from "../assets/SVG/ae.svg"
-import Ai from "../assets/SVG/ai.svg"
-import Pr from "../assets/SVG/pr.svg"
+import blueArrrowUp from "../assets/SVG/up_blue_arrow.svg";
+import Ps from "../assets/SVG/ps.svg";
+import Ae from "../assets/SVG/ae.svg";
+import Ai from "../assets/SVG/ai.svg";
+import Pr from "../assets/SVG/pr.svg";
+
 const Home = () => {
   return (
     <div className={styles.outerDiv}>
@@ -54,15 +55,14 @@ const Home = () => {
         </div>
 
         <div className={styles.rightBox}>
-          <div className={styles.rightBCont}> 
-
+          <div className={styles.rightBCont}>
             <div className={styles.topRight}>
               <img src={Ps} alt="Ps" />
               <img src={Ai} alt="Ai" />
               <img src={Pr} alt="Pr" />
               <img src={Ae} alt="Ae" />
             </div>
-            <div className={styles.bottomRight}> 
+            <div className={styles.bottomRight}>
               <div className={styles.arrow_up}>
                 <img src={blueArrrowUp} alt="arrowUp" />
               </div>

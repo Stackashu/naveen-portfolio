@@ -1,0 +1,197 @@
+.outerDiv {
+  width: 100%;
+  height: 100%;
+  padding: 0.6vw var(--md-padding);
+}
+
+.innerDiv {
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* background: red; */
+}
+
+.leftDiv {
+  width: 60%;
+}
+
+.resumeHeading {
+  position: relative;
+  /* background: yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resumeHeading h1 {
+  font-size: 4vw;
+  opacity: 0.4;
+  color: gray;
+}
+.resumeHeading h2 {
+  position: absolute;
+  font-size: 2.8vw;
+  letter-spacing: -0.2vw;
+}
+
+.career {
+  background: var(--secondary-color);
+  border-radius: 20px;
+  padding: var(--lg-padding);
+  color: white;
+}
+
+.personalHead {
+  font-size: 1.7vw;
+}
+
+.whiteLine {
+  height: 1px;
+  background: white;
+  margin-top: 0.8vw;
+  width: 40%;
+}
+
+.personlDetails {
+  padding: var(--sm-padding) 0;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center;    background: #000; */
+}
+
+.leftD,
+.rightD {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.info {
+  display: flex;
+  gap: 1vw;
+}
+
+.info h1 {
+  font-size: 1.2vw;
+  color: var(--tertiary-color);
+}
+
+.info h1:nth-child(2) {
+  font-weight: 200;
+  color: white;
+}
+
+.Experience {
+  /* background: yellow; */
+  margin-top: 2vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+.exp {
+  display: flex;
+  gap: 2vw;
+}
+
+.leftExp,
+.rightCar {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.topBar{
+    /* padding: 0px 10px; */
+    display: flex;
+    justify-content: space-between;
+}
+.topBar h2:nth-child(1){
+    color: var(--tertiary-color);
+}
+.topBar h2{
+    font-size: 1vw;
+}
+
+.para p{
+    text-align: justify;
+    font-size: 1vw;
+    font-weight: 300;
+    opacity: 0.8;
+}
+.rightDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /* background: yellow; */
+  gap: 1vw;
+}
+
+.resumeBox{
+  margin-top: 4.5vw;
+  /* padding: var(--sm-padding); */
+  height: 60%;
+  /* background: #000; */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+
+.resumeBox img{
+  width: 80%;
+  /* height: 100%; */
+}
+
+.bottomBut{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+.bottomBut img {
+  width: 15%;
+  animation: rightArrow 5s infinite;
+}
+
+@keyframes rightArrow {
+  0% {
+    transform: translateX(0) rotate(180deg);
+  }
+  50% {
+    transform: translateX(30px) rotate(180deg);
+  }
+  100% {
+    transform: translateX(0) rotate(180deg);
+  }
+}
+
+.cvButton{
+  border: 1px solid black;
+  padding: 6px  20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: ease .5s all;
+}
+
+.cvButton h1{
+  transition: ease 0.5s all;
+  font-size: 1vw;
+}
+
+.cvButton:hover h1{
+  color: white;
+}
+.cvButton:hover{
+  background: var(--secondary-color);
+}

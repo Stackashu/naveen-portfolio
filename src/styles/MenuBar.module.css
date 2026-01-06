@@ -1,0 +1,44 @@
+.outerDiv{
+    height: 100%;
+    z-index: 50;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.innerDiv{
+    background: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    padding: var(--sm-padding);
+    border-radius: 5px 0 0 5px;
+}
+.imgCont{
+    background: white;
+    padding: 8px;
+    border-radius: 50px;
+    transition: ease 0.5s all;
+}
+.imgCont:hover{
+    background: var(--tertiary-color);
+    opacity: 0.5;
+}
+.activeTab{
+    background: var(--tertiary-color);
+}
+
+.activeImgColor{
+    filter: brightness(0) invert(1);
+}
+.imgColor{
+    filter: grayscale(1);
+    /* For SVG, you can also use fill property if needed */
+    fill: gray;
+}
+.imgCont img{
+    width: 30px;
+    height: 25px;
+}

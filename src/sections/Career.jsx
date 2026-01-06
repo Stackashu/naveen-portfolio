@@ -57,9 +57,9 @@ const CAREER = [
   },
 ];
 const Career = () => {
-  // Downloadable CV button component
+ 
   const downloadCv = () => {
-    const cvUrl = "/naveenResume.pdf"; // Place your CV in the /public as CV.pdf for this to work
+    const cvUrl = "/naveenResume.pdf";
     const link = document.createElement("a");
     link.href = cvUrl;
     link.download = "Naveen_Kumar_Yadav_CV.pdf";
@@ -67,7 +67,7 @@ const Career = () => {
     link.click();
     document.body.removeChild(link);
   };
-  
+
   return (
     <div className={styles.outerDiv}>
       <div className={styles.innerDiv}>
@@ -163,6 +163,7 @@ const Career = () => {
             </div>
           </div>
         </div>
+        
       </div>
     </div>
   );

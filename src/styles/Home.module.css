@@ -21,6 +21,7 @@
   align-items: center;
   /* background: blue; */
 }
+
 .leftBox {
   width: 50%;
   height: 100%;
@@ -95,6 +96,7 @@
 .myImage {
   position: absolute;
   left: 50%;
+  /* top:0; */
   transform: translateX(-50%);
   bottom: 0;
   width: 50%;
@@ -169,14 +171,13 @@
   background-color: white;
 }
 
-
-.lastBCont:hover h2{
-transform: translateX(20px);
+.lastBCont:hover h2 {
+  transform: translateX(20px);
 }
 
-.lastBCont:hover .circleIn{
+.lastBCont:hover .circleIn {
   transform: scale(1.1);
-  }
+}
 
 .rightBox {
   height: 100%;
@@ -237,7 +238,7 @@ transform: translateX(20px);
   }
 }
 
-.button{
+.button {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -245,11 +246,11 @@ transform: translateX(20px);
   gap: 1vw;
 }
 
-.button h1{
+.button h1 {
   font-size: 1.5vw;
 }
 
-.buttonIn{
+.buttonIn {
   border-radius: 25px;
   border: 1px solid black;
   padding: 5px 30px;
@@ -257,12 +258,12 @@ transform: translateX(20px);
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-.buttonIn h1{
+.buttonIn h1 {
   font-size: 1vw;
   font-weight: 300;
 }
 
-.buttonIn:hover{
+.buttonIn:hover {
   background: var(--secondary-color);
   color: white;
 }

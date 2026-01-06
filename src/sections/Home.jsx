@@ -40,6 +40,7 @@ const Home = () => {
             </div>
 
             <div className={styles.blueLine}></div>
+
             <div className={styles.lastBCont}>
               <h2> More about me </h2>
               {/* <img src="" alt="right-arrow" /> */}

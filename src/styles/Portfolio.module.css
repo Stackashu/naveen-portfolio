@@ -1,0 +1,172 @@
+.outerDiv {
+  width: 100%;
+  height: 100vh;
+  /* background: #000; */
+  display: flex;
+  flex-direction: column;
+}
+
+.innerDiv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.topBar {
+  padding: var(--md-padding);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: var(--secondary-color);
+  flex-shrink: 0;
+  /* Ensure topBar height is steady and measurable */
+  min-height: 80px;
+  box-sizing: border-box;
+}
+
+.topLeft {
+  width: 40%;
+  /* background: red; */
+}
+.portfolioHead {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.portfolioHead h1 {
+  font-size: 3.5vw;
+  opacity: 0.4;
+  font-weight: 1000;
+}
+.portfolioHead h3 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-weight: 1000;
+  font-size: 2.4vw;
+  transform: translate(-50%, -50%);
+}
+.topRight {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.filterTools {
+  width: 80px;
+}
+.imgCont1{
+    padding: 0.3vw;
+    
+  display: flex;
+  gap: 2px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imgCont1 h1 {
+  color: white;
+  font-size: 1.2vw;
+}
+.selectType {
+  width: 100%;
+  padding: 14px 48px 14px 16px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #e5e7eb;
+
+  background: rgba(17, 24, 39, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+
+  outline: none;
+  cursor: pointer;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  transition: border-color 0.25s ease, box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+/* Hover */
+.selectType:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Focus */
+.selectType:focus {
+  border-color: #6366f1; /* Indigo */
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
+  background: rgba(17, 24, 39, 1);
+}
+
+/* Disabled option (placeholder) */
+.selectType option[disabled] {
+  color: #9ca3af;
+}
+
+/* Dropdown options */
+.selectType option {
+  background-color: #111827;
+  color: #e5e7eb;
+}
+
+.bottomBar {
+  width: 100%;
+  flex: 1 1 0%;
+  height: 0;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* Only this scrolls; it's sized to fill everything below TopBar */
+  /* Ensures scrollability on y axis only */
+}
+
+.imgCont {
+  display: flex;
+  gap: 16px;
+
+  flex-wrap: wrap;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  scroll-snap-type: y proximity;
+  scroll-behavior: smooth;
+
+  padding: 16px;
+
+  -webkit-overflow-scrolling: touch;
+
+  scrollbar-width: none;
+}
+.imgCont::-webkit-scrollbar {
+  display: none;
+}
+
+.portfolioImg {
+  flex: 0 0 280px; /* fixed width = clean snap */
+  height: 380px;
+
+  object-fit: cover;
+  /* border-radius: 16px; */
+
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+
+  cursor: pointer;
+  user-select: none;
+
+  transition: transform 0.25s ease;
+}
+
+.portfolioImg:hover {
+  transform: scale(1.03);
+}

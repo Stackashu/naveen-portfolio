@@ -4,6 +4,7 @@ import PROFILEICON from "../assets/SVG/profile_icon.svg"
 import SUITCASE from "../assets/SVG/suitcase.svg"
 import CONTACT from "../assets/SVG/customer_support.svg"
 import styles from "../styles/MenuBar.module.css"
+
 const ICONS = [
   HOME , PROFILEICON , SUITCASE , CONTACT
 ]

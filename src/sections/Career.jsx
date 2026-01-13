@@ -3,6 +3,7 @@ import styles from "../styles/Career.module.css";
 import RESUMEIMG from "../assets/resume/resumePic.png";
 import RIGHTARROW from "../assets/SVG/leftArrow.svg";
 
+
 const EXPERIENCE = [
   {
     name: "ADG ONLINE SOLUTION",

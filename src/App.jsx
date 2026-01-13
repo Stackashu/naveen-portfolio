@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import Home from "./sections/Home";
 import Career from "./sections/Career";
 import MenuBar from "./comoponents/MenuBar";
+import Portfolio from "./sections/Portfolio";
 
 const renderSection = (idx) => {
   switch (idx) {
+    case 2:
+      return <Portfolio/>
     case 1:
       return <Career />;
     case 0:

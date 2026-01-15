@@ -1,5 +1,5 @@
 .outerDiv {
-  width: 100%;
+  width: 95%;
   height: 100%;
   padding: 0.6vw var(--md-padding);
 }
@@ -29,11 +29,13 @@
   font-size: 4vw;
   opacity: 0.4;
   color: gray;
+  font-family: var(--primary-font);
 }
 .resumeHeading h2 {
   position: absolute;
   font-size: 2.8vw;
   letter-spacing: -0.2vw;
+  font-family: var(--primary-font);
 }
 
 .career {
@@ -45,6 +47,7 @@
 
 .personalHead {
   font-size: 1.7vw;
+  font-family: var(--primary-font);
 }
 
 .whiteLine {
@@ -76,6 +79,7 @@
 .info h1 {
   font-size: 1.2vw;
   color: var(--tertiary-color);
+  font-family: var(--secondary-font);
 }
 
 .info h1:nth-child(2) {
@@ -89,6 +93,10 @@
   display: flex;
   flex-direction: column;
   gap: 2vw;
+}
+
+.Experience h1 {
+  font-family: var(--primary-font);
 }
 
 .exp {
@@ -119,6 +127,7 @@
 }
 .topBar h2{
     font-size: 1vw;
+    font-family: var(--secondary-font);
 }
 
 .para p{
@@ -126,6 +135,7 @@
     font-size: 1vw;
     font-weight: 300;
     opacity: 0.8;
+    font-family: var(--secondary-font);
 }
 .rightDiv{
   display: flex;
@@ -187,6 +197,7 @@
 .cvButton h1{
   transition: ease 0.5s all;
   font-size: 1vw;
+  font-family: var(--secondary-font);
 }
 
 .cvButton:hover h1{

@@ -42,6 +42,7 @@
   font-size: 3.5vw;
   opacity: 0.4;
   font-weight: 1000;
+  font-family: var(--primary-font);
 }
 .portfolioHead h3 {
   position: absolute;
@@ -50,6 +51,7 @@
   font-weight: 1000;
   font-size: 2.4vw;
   transform: translate(-50%, -50%);
+  font-family: var(--primary-font);
 }
 .topRight {
   width: 50%;
@@ -72,6 +74,7 @@
 .imgCont1 h1 {
   color: white;
   font-size: 1.2vw;
+  font-family: var(--secondary-font);
 }
 .selectType {
   width: 100%;
@@ -79,6 +82,7 @@
   font-size: 15px;
   font-weight: 500;
   color: #e5e7eb;
+  font-family: var(--secondary-font);
 
   background: rgba(17, 24, 39, 0.9);
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -119,32 +123,23 @@
 }
 
 .bottomBar {
-  width: 100%;
+  width: 95%;
   flex: 1 1 0%;
   height: 0;
   min-height: 0;
   overflow-y: auto;
   overflow-x: hidden;
-  /* Only this scrolls; it's sized to fill everything below TopBar */
-  /* Ensures scrollability on y axis only */
 }
 
+/* Use CSS grid to ensure "r" columns (set r as needed, e.g., 4 columns here) */
 .imgCont {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  /* Change 4 to r for r columns */
   gap: 16px;
-
-  flex-wrap: wrap;
-
   overflow-x: hidden;
   overflow-y: auto;
-
-  scroll-snap-type: y proximity;
-  scroll-behavior: smooth;
-
   padding: 16px;
-
   -webkit-overflow-scrolling: touch;
-
   scrollbar-width: none;
 }
 .imgCont::-webkit-scrollbar {
@@ -152,11 +147,12 @@
 }
 
 .portfolioImg {
-  flex: 0 0 280px; /* fixed width = clean snap */
-  height: 380px;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
 
   object-fit: cover;
-  /* border-radius: 16px; */
 
   scroll-snap-align: start;
   scroll-snap-stop: always;
@@ -166,6 +162,9 @@
 
   transition: transform 0.25s ease;
 }
+
+/* Optional: style for images of various proportions/sizes */
+/* Remove fixed height; image aspect-ratio will determine the height naturally */
 
 .portfolioImg:hover {
   transform: scale(1.03);

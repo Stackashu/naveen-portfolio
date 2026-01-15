@@ -19,16 +19,7 @@ const portfolioItems = [
     tools: [Ps, Ai], // Photoshop, Illustrator
     src: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSlA1Utrn3gnSntUoMv3-Nv47Qt3O0EGoFjjhf-z8JdlzCn7dOamHrvBPNal8mZ1gDboG1tJS0bpSzn3cVXMWRhP7bBVyxbRfL6TrB5pzMzsXWDmxYZYwq4lALPPgtrQelHpNaFVkpy4BzK_0iF9aX-IMVzcWI8_ygSo0PQkfb6ZdbTIjMKoTDhJJM4sc7/s1600/3.jpg",
     alt: "Youtube Project",
-    text: "Youtube Project",
-    detailSrc:
-      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSlA1Utrn3gnSntUoMv3-Nv47Qt3O0EGoFjjhf-z8JdlzCn7dOamHrvBPNal8mZ1gDboG1tJS0bpSzn3cVXMWRhP7bBVyxbRfL6TrB5pzMzsXWDmxYZYwq4lALPPgtrQelHpNaFVkpy4BzK_0iF9aX-IMVzcWI8_ygSo0PQkfb6ZdbTIjMKoTDhJJM4sc7/s1600/3.jpg",
-    detailAlt: "Youtube Project",
-    caption: {
-      project: "Youtube",
-      client: "Envato",
-      language: "HTML, CSS, JS",
-      preview: "www.envato.com",
-    },
+    text: "Youtube Project"
   },
   {
     type: "img",
@@ -36,16 +27,7 @@ const portfolioItems = [
     tools: [Ps, Pr], // Photoshop, Premiere Pro
     src: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBZAVQ53Y7y9meXIbC_wsS5sQoJcn7-gaHWu7MhBk_qKguSpPkKA35-gE_IKJbvFMuHkk3X8SEoLtUXoWjZ3yd_tORgdAicAOw3R6LvExSXsv4y77msK1Z8tkIfHnDjfK7K9Lf2WV94sGB5DYoAwymV0deW3HkhvT4Bts6lXXNvCNogQDHL8lCltWVJVzl/s1600/4.jpg",
     alt: "Slider Project",
-    text: "Slider Project",
-    detailSrc:
-      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBZAVQ53Y7y9meXIbC_wsS5sQoJcn7-gaHWu7MhBk_qKguSpPkKA35-gE_IKJbvFMuHkk3X8SEoLtUXoWjZ3yd_tORgdAicAOw3R6LvExSXsv4y77msK1Z8tkIfHnDjfK7K9Lf2WV94sGB5DYoAwymV0deW3HkhvT4Bts6lXXNvCNogQDHL8lCltWVJVzl/s1600/4.jpg",
-    detailAlt: "Slider Project",
-    caption: {
-      project: "Slider",
-      client: "Envato",
-      language: "HTML, CSS, JS",
-      preview: "www.envato.com",
-    },
+    text: "Slider Project"
   },
   {
     type: "img",
@@ -53,16 +35,7 @@ const portfolioItems = [
     tools: [Ai], // Illustrator
     src: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoYAWA3b2nZN8NySzx9QjueDXShCajgROKZv5TOtRWr8Z44HpfmjVoKnteAngBFsCUljywGDq7q4XlMipHAXi-8lWw1s8GyR63vVW8Vs7qYY_iW8uFA3tESP6VbYyHO32JfcxDIqOEiHuvf92V7AyYB8Tqlml9Z8C4kAVT_JAEQRxM_7fnUla7ZEaymxLQ/s1600/6.jpeg",
     alt: "Image Project",
-    text: "Image Project",
-    detailSrc:
-      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoYAWA3b2nZN8NySzx9QjueDXShCajgROKZv5TOtRWr8Z44HpfmjVoKnteAngBFsCUljywGDq7q4XlMipHAXi-8lWw1s8GyR63vVW8Vs7qYY_iW8uFA3tESP6VbYyHO32JfcxDIqOEiHuvf92V7AyYB8Tqlml9Z8C4kAVT_JAEQRxM_7fnUla7ZEaymxLQ/s1600/6.jpeg",
-    detailAlt: "Image Project",
-    caption: {
-      project: "Image",
-      client: "Envato",
-      language: "HTML, CSS, JS",
-      preview: "www.envato.com",
-    },
+    text: "Image Project"
   },
   {
     type: "img",
@@ -70,16 +43,7 @@ const portfolioItems = [
     tools: [Ai, Ps], // Illustrator, Photoshop
     src: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWq1xDqGxdC-EuJbc6nJtmn4iKGbO6k7Xc7O6wUrBrBtFGMrOQjDFmH4XGLFR5tL-J0ZM6abC7-jLoZEMADh2sa22hyphenhyphenImKxXjF1wL8cDMDHPUkVURWPGY6PFvqZHBIE0nnea4qUhgLgy1KUQIbUztwEpWFTMJh0ILPAGtHIgrfXxa28FH0nf2EHmrcB6Jf/s1600/10.jpeg",
     alt: "Image Project",
-    text: "Image Project",
-    detailSrc:
-      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWq1xDqGxdC-EuJbc6nJtmn4iKGbO6k7Xc7O6wUrBrBtFGMrOQjDFmH4XGLFR5tL-J0ZM6abC7-jLoZEMADh2sa22hyphenhyphenImKxXjF1wL8cDMDHPUkVURWPGY6PFvqZHBIE0nnea4qUhgLgy1KUQIbUztwEpWFTMJh0ILPAGtHIgrfXxa28FH0nf2EHmrcB6Jf/s1600/10.jpeg",
-    detailAlt: "Image Project",
-    caption: {
-      project: "Image",
-      client: "Envato",
-      language: "HTML, CSS, JS",
-      preview: "www.envato.com",
-    },
+    text: "Image Project"
   },
   {
     type: "img",
@@ -87,16 +51,7 @@ const portfolioItems = [
     tools: [Pr], // Premiere Pro
     src: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRiMkmwd1H-YmmjTfYwMiPADgImSOc8Nya-QhnVSZN0Ajdrxv5qoBSXnEk7JQoK_tEklEn3Gpor3nE4jTBqmV14Ma2AnwDSb1fUit7mBftSlQWxbz_RTQnAdpD0FVtYAyn-oj8OKO1LGQkXS2Z4Rf0zXgnlLNdgnDyPZ0Lp4xLJOlhoAawvpfIvZsskFoF/s1600/8.jpg",
     alt: "Image Project",
-    text: "Image Project",
-    detailSrc:
-      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRiMkmwd1H-YmmjTfYwMiPADgImSOc8Nya-QhnVSZN0Ajdrxv5qoBSXnEk7JQoK_tEklEn3Gpor3nE4jTBqmV14Ma2AnwDSb1fUit7mBftSlQWxbz_RTQnAdpD0FVtYAyn-oj8OKO1LGQkXS2Z4Rf0zXgnlLNdgnDyPZ0Lp4xLJOlhoAawvpfIvZsskFoF/s1600/8.jpg",
-    detailAlt: "Image Project",
-    caption: {
-      project: "Image",
-      client: "Envato",
-      language: "HTML, CSS, JS",
-      preview: "www.envato.com",
-    },
+    text: "Image Project"
   },
   {
     type: "img",
@@ -104,16 +59,7 @@ const portfolioItems = [
     tools: [Pr, Ae], // Premiere Pro, After Effects
     src: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTas3x4_CenaY2mVJ3uUdBzbX-QUkbE_xwE7Jw6_e2vxnUicfaJEk7GvWwrtXGjKaNncIC9R2-G3tiVMadxqAcEI5rSsPQHInhDYkO9_lcb_k3ZNeHo685sCl6aFnTZx6vAyCnkmSlxEnTtF12CrgLheIJTjXfLB2ktWgInJp7ZHwEmbxeQZSEUy9STTpu/s1600/9.jpeg",
     alt: "Image Project",
-    text: "Image Project",
-    detailSrc:
-      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTas3x4_CenaY2mVJ3uUdBzbX-QUkbE_xwE7Jw6_e2vxnUicfaJEk7GvWwrtXGjKaNncIC9R2-G3tiVMadxqAcEI5rSsPQHInhDYkO9_lcb_k3ZNeHo685sCl6aFnTZx6vAyCnkmSlxEnTtF12CrgLheIJTjXfLB2ktWgInJp7ZHwEmbxeQZSEUy9STTpu/s1600/9.jpeg",
-    detailAlt: "Image Project",
-    caption: {
-      project: "Image",
-      client: "Envato",
-      language: "HTML, CSS, JS",
-      preview: "www.envato.com",
-    },
+    text: "Image Project"
   },
   {
     type: "img",
@@ -121,16 +67,7 @@ const portfolioItems = [
     tools: [Ae, Ai], // After Effects, Illustrator
     src: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicEW-jQK0JvAO9agVv0W-4Ic5dkkI0dcrti-SAOU8TznenQyYizjOWUJONmKRdhqaMNRpn8t1lS14vor5lES3HRyJPxpPaZgoajQkbe3SGGZVDW0AJOKk6rl23D01J8dFVgKQYTRPHpvTdCCxEuGTz9tsw8EPslBL1671Fyuqn1UJkaAV4QkieDTNBq8pb/s1600/Post%203.jpg",
     alt: "Image Project",
-    text: "Image Project",
-    detailSrc:
-      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicEW-jQK0JvAO9agVv0W-4Ic5dkkI0dcrti-SAOU8TznenQyYizjOWUJONmKRdhqaMNRpn8t1lS14vor5lES3HRyJPxpPaZgoajQkbe3SGGZVDW0AJOKk6rl23D01J8dFVgKQYTRPHpvTdCCxEuGTz9tsw8EPslBL1671Fyuqn1UJkaAV4QkieDTNBq8pb/s1600/Post%203.jpg",
-    detailAlt: "Image Project",
-    caption: {
-      project: "Image",
-      client: "Envato",
-      language: "HTML, CSS, JS",
-      preview: "www.envato.com",
-    },
+    text: "Image Project"
   },
   {
     type: "img",
@@ -138,17 +75,9 @@ const portfolioItems = [
     tools: [Ps, Pr], // Photoshop, Premiere Pro
     src: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEik0-QQwAdgVxRKW5GiAxONEW0ou5IbqIJNycCuccl4iBTB-UD_4bp8JrxxxHIk1A4_wJ5MmzsxLeEgI7PetUq700FY6AFBGFIpkeJ9AC6j52h1DbgOmlxhhEYLhG-9aEe_OJsxiOjxukpMiQ_KafVIMkQIrOI_8auSIxJNbvZW6q3KSmEZQvcIYEknv27Z/s1600/7.jpg",
     alt: "Image Project",
-    text: "Image Project",
-    detailSrc:
-      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEik0-QQwAdgVxRKW5GiAxONEW0ou5IbqIJNycCuccl4iBTB-UD_4bp8JrxxxHIk1A4_wJ5MmzsxLeEgI7PetUq700FY6AFBGFIpkeJ9AC6j52h1DbgOmlxhhEYLhG-9aEe_OJsxiOjxukpMiQ_KafVIMkQIrOI_8auSIxJNbvZW6q3KSmEZQvcIYEknv27Z/s1600/7.jpg",
-    detailAlt: "Image Project",
-    caption: {
-      project: "Image",
-      client: "Envato",
-      language: "HTML, CSS, JS",
-      preview: "www.envato.com",
-    },
+    text: "Image Project"
   },
+  
 ];
 
 const POSTTYPE = ["All" ,"Banner", "InstaPost", "Template", "Pemplate"];

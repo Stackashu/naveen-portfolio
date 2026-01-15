@@ -7,9 +7,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: var(--secondary-color);
 }
 .innerDiv{
-    background: var(--secondary-color);
     display: flex;
     flex-direction: column;
     gap: 2vw;

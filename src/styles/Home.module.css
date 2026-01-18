@@ -112,6 +112,16 @@
   height: 100%;
   object-fit: cover;
 }
+.toolBar img {
+  position: absolute;
+  height: 80%;
+  bottom: 0;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  transform: rotate(20deg);
+  transform-origin: center;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25), 0 1.5px 8px 0 rgba(49, 168, 255, 0.20);
+}
 
 .lastBCont {
   margin-top: 1.8vw;
@@ -133,6 +143,24 @@
   font-weight: 200;
   padding: 0.5vw var(--sm-padding);
   font-family: var(--secondary-font);
+}
+.lastBCont img {
+  width: 10%;
+  animation: whiteRightArrow 3s infinite ;
+  transition: all 3s ease;
+  transform: translateX(-10%);
+}
+
+@keyframes whiteRightArrow {
+  0% {
+    transform: translateX(-10%);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-10%);
+  }
 }
 
 .circle {

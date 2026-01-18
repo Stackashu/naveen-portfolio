@@ -4,9 +4,9 @@ import PROFILEICON from "../assets/SVG/profile_icon.svg"
 import SUITCASE from "../assets/SVG/suitcase.svg"
 import CONTACT from "../assets/SVG/customer_support.svg"
 import styles from "../styles/MenuBar.module.css"
-
+import Assets from "../assets/SVG2/Assets.svg"
 const ICONS = [
-  HOME , PROFILEICON , SUITCASE , CONTACT
+  HOME , PROFILEICON , SUITCASE , CONTACT , Assets
 ]
 const MenuBar = ({setIndex , index}) => {
   return (

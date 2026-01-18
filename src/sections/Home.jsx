@@ -8,7 +8,8 @@ import Ps from "../assets/SVG/ps.svg";
 import Ae from "../assets/SVG/ae.svg";
 import Ai from "../assets/SVG/ai.svg";
 import Pr from "../assets/SVG/pr.svg";
-
+import RightWhiteSmallArrow from "../assets/SVG2/whiteRightSmall.svg"
+import Toolbar from "../assets/SVG2/toolBar.png"
 const Home = () => {
   return (
     <div className={styles.outerDiv}>
@@ -43,7 +44,7 @@ const Home = () => {
 
             <div className={styles.lastBCont}>
               <h2> More about me </h2>
-              {/* <img src="" alt="right-arrow" /> */}
+              <img src={RightWhiteSmallArrow} alt="right-arrow" />
               <div className={styles.circle}>
                 <div className={styles.circleIn}>
                   <div className={styles.circleIn1}>
@@ -81,6 +82,9 @@ const Home = () => {
       <div className={styles.myImage}>
         <img src={myImage} alt="naveen" />
       </div>
+      {/* <div className={styles.toolBar}>
+        <img src={Toolbar} alt="Toolbar" />
+      </div> */}
     </div>
   );
 };

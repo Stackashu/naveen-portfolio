@@ -159,9 +159,9 @@ const Career = () => {
           <div className={styles.bottomBut}>
             <img src={RIGHTARROW} alt="rightArrow" />
 
-            <div onClick={downloadCv} className={styles.cvButton}>
+            <button type="button" onClick={downloadCv} className={styles.cvButton}>
               <h1>Download CV</h1>
-            </div>
+            </button>
           </div>
         </div>
         

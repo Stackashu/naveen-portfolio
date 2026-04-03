@@ -1,0 +1,353 @@
+/* Blog.module.css */
+
+.blogPage {
+    width: 97%;
+    height: 100vh;
+    padding: 0;
+    background-color: transparent; 
+    color: #ffffff;
+    font-family: var(--secondary-font);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+}
+
+/* Header - Solid Dark */
+.titleSection {
+    flex-shrink: 0;
+    padding: 2rem 1rem;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    background-color: rgba(0, 29, 54, 0.9);
+    box-shadow: 0 4px 20px rgba(0, 29, 54, 0.55);
+    border-bottom: 1px solid rgba(49, 168, 255, 0.25);
+}
+
+.titleSection h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+    font-family: var(--primary-font);
+}
+
+.titleSection h2 span {
+    color: var(--tertiary-color);
+}
+
+.titleBg {
+    font-size: 4.5rem;
+    line-height: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ffffff;
+    z-index: -1;
+    white-space: nowrap;
+    letter-spacing: 1rem;
+    pointer-events: none;
+}
+
+/* Grid Container */
+.gridContainer {
+    flex-grow: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+    
+    /* Scrollbar */
+    scrollbar-width: thin;
+    scrollbar-color: var(--tertiary-color) var(--secondary-color);
+}
+
+.gridContainer::-webkit-scrollbar {
+    width: 8px;
+}
+
+.gridContainer::-webkit-scrollbar-track {
+    background: var(--secondary-color);
+}
+
+.gridContainer::-webkit-scrollbar-thumb {
+    background-color: var(--tertiary-color);
+    border-radius: 4px;
+}
+
+/* Cards - Solid Dark */
+.card {
+    background-color: rgba(0, 29, 54, 0.75);
+    border: 1px solid rgba(49, 168, 255, 0.3);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 29, 54, 0.35);
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(49, 168, 255, 0.2);
+    border-color: var(--tertiary-color);
+}
+
+.postThumb {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    background: rgba(0, 29, 54, 0.55);
+}
+
+.postThumb a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.postThumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+
+.card:hover .postThumb img {
+    transform: scale(1.1);
+}
+
+.postContent {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-grow: 1;
+}
+
+.entryHeader h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.3;
+    font-family: var(--primary-font);
+}
+
+.postTitle {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.postTitle:hover {
+    color: var(--tertiary-color);
+}
+
+.entryDetails {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.selectLabel {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #ccc;
+    margin-bottom: 0.2rem;
+    display: block;
+    font-family: var(--secondary-font);
+}
+
+.osSelect {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: rgba(0, 29, 54, 0.95);
+    border: 1px solid rgba(49, 168, 255, 0.35);
+    border-radius: 6px;
+    color: #fff;
+    font-size: 0.95rem;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: var(--secondary-font);
+}
+
+.osSelect:focus {
+    border-color: var(--tertiary-color);
+    box-shadow: 0 0 0 2px rgba(49, 168, 255, 0.3);
+}
+
+.downloadBtn {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+    font-family: var(--secondary-font);
+}
+
+.downloadBtn:hover {
+    background-color: #d7efff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(49, 168, 255, 0.6);
+}
+
+.downloadBtn:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 1199px) {
+    /* Let the page scroll naturally; avoid nested flex/grid height fights on mobile WebKit */
+    .blogPage {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        min-height: 100dvh;
+        overflow: visible;
+    }
+
+    .titleSection {
+        padding: 1.2rem 0.9rem;
+    }
+
+    .titleSection h2 {
+        font-size: 2.4rem;
+    }
+
+    .titleBg {
+        font-size: 3.5rem;
+        letter-spacing: 0.45rem;
+    }
+
+    .gridContainer {
+        flex: 0 0 auto;
+        min-height: 0;
+        padding: 1rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-auto-rows: auto;
+        align-items: start;
+        gap: 1rem;
+        overflow: visible;
+    }
+
+    .card {
+        width: 100%;
+        align-self: start;
+        /* Do NOT use min-height: 100% here — it collapses rows on some mobile browsers */
+    }
+
+    /* Fixed-height thumb: reliable on iOS/Safari (aspect-ratio alone was collapsing) */
+    .postThumb {
+        width: 100%;
+        flex-shrink: 0;
+        height: 200px;
+        min-height: 200px;
+        max-height: none;
+        aspect-ratio: auto;
+        position: relative;
+    }
+
+    .postThumb a {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .postThumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .postContent {
+        padding: 1rem;
+        gap: 0.8rem;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+    .entryDetails {
+        margin-top: 0;
+    }
+
+    .entryHeader h3 {
+        font-size: 1.15rem;
+    }
+
+    .osSelect,
+    .downloadBtn {
+        min-height: 42px;
+    }
+}
+
+@media (max-width: 768px) {
+    .titleSection h2 {
+        font-size: 2.2rem;
+    }
+
+    .titleBg {
+        font-size: 3rem;
+    }
+
+    .gridContainer {
+        padding: 0.75rem;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .card {
+        border-radius: 14px;
+        overflow: hidden;
+    }
+
+    .postThumb {
+        height: 210px;
+        min-height: 210px;
+    }
+
+    .postContent {
+        padding: 1rem;
+        gap: 0.75rem;
+    }
+
+    .entryHeader h3 {
+        font-size: 1.08rem;
+        line-height: 1.3;
+    }
+
+    .selectLabel {
+        font-size: 0.85rem;
+    }
+
+    .osSelect {
+        font-size: 0.9rem;
+        padding: 0.72rem;
+        border-radius: 8px;
+    }
+
+    .downloadBtn {
+        font-size: 0.9rem;
+        border-radius: 8px;
+        padding: 0.78rem;
+    }
+}

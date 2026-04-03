@@ -1,45 +1,155 @@
-.outerDiv{
-    height: 100%;
-    z-index: 50;
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--secondary-color);
-}
-.innerDiv{
-    display: flex;
-    flex-direction: column;
-    gap: 2vw;
-    padding: var(--sm-padding);
-    border-radius: 5px 0 0 5px;
-}
-.imgCont{
-    cursor: pointer;
-    background: white;
-    padding: 8px;
-    border-radius: 50px;
-    transition: ease 0.5s all;
-}
-.imgCont:hover{
-    background: var(--tertiary-color);
-    opacity: 0.5;
-}
-.activeTab{
-    background: var(--tertiary-color);
+.outerDiv {
+  height: 100vh;
+  z-index: 50;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--secondary-color);
 }
 
-.activeImgColor{
-    filter: brightness(0) invert(1);
+.innerDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  padding: var(--sm-padding) 0.6vw;
+  background: var(--secondary-color);
+  border-radius: 5px 0 0 5px;
 }
-.imgColor{
-    filter: grayscale(1);
-    /* For SVG, you can also use fill property if needed */
-    fill: gray;
+
+.imgCont {
+  cursor: pointer;
+  background: white;
+  padding: 10px;
+  border-radius: 50px;
+  transition: ease 0.5s all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 44px;
+  min-width: 44px;
 }
-.imgCont img{
-    width: 30px;
-    height: 25px;
+
+.imgCont:hover {
+  background: var(--tertiary-color);
+  opacity: 0.9;
+}
+
+.activeTab {
+  background: var(--tertiary-color);
+}
+
+.activeImgColor {
+  filter: brightness(0) invert(1);
+}
+
+.imgColor {
+  filter: grayscale(1);
+  /* For SVG, you can also use fill property if needed */
+  fill: gray;
+}
+
+.imgCont img {
+  width: 26px;
+  height: 26px;
+}
+
+.imgCont.activeTab {
+  background: var(--tertiary-color) !important;
+}
+
+.label {
+  color: var(--secondary-color);
+  font-family: var(--secondary-font);
+  font-size: 0.95rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  .outerDiv {
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: transparent;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 120;
+  }
+
+  .hamburger {
+    display: flex;
+    position: fixed;
+    top: 24px;
+    right: 16px;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    border: 1px solid rgba(49, 168, 255, 0.45);
+    background: var(--secondary-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    padding: 0;
+    z-index: 121;
+  }
+
+  .hamburger span {
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    border-radius: 4px;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+  }
+
+  .hamburgerOpen span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .hamburgerOpen span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburgerOpen span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .innerDiv {
+    position: fixed;
+    top: 82px;
+    right: 16px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: all 0.25s ease;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .showMenu {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .imgCont {
+    width: 180px;
+    justify-content: flex-start;
+    border-radius: 12px;
+    padding: 10px 14px;
+  }
 }

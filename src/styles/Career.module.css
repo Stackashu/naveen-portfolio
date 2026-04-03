@@ -1,3 +1,5 @@
+/* Career.module.css */
+
 .outerDiv {
   width: 95%;
   height: 100%;
@@ -10,49 +12,61 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  /* background: red; */
+  justify-content: space-between;
 }
 
 .leftDiv {
   width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .resumeHeading {
   position: relative;
-  /* background: yellow; */
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .resumeHeading h1 {
   font-size: 4vw;
-  opacity: 0.4;
-  color: gray;
+  opacity: 0.18;
+  color: rgba(255, 255, 255, 0.7);
   font-family: var(--primary-font);
+  text-transform: uppercase;
 }
 .resumeHeading h2 {
   position: absolute;
   font-size: 2.8vw;
   letter-spacing: -0.2vw;
   font-family: var(--primary-font);
+  text-transform: uppercase;
+  color: var(--tertiary-color);
+  font-weight: 800;
+  z-index: 1;
+  text-shadow: 0 0 10px rgba(49, 168, 255, 0.35);
 }
 
 .career {
-  background: var(--secondary-color);
+  background: rgba(0, 29, 54, 0.75);
+  border: 1px solid rgba(49, 168, 255, 0.3);
   border-radius: 20px;
   padding: var(--lg-padding);
   color: white;
+  box-shadow: 0 10px 30px rgba(0, 29, 54, 0.35);
 }
 
 .personalHead {
   font-size: 1.7vw;
   font-family: var(--primary-font);
+  font-weight: 700;
 }
 
 .whiteLine {
-  height: 1px;
-  background: white;
+  height: 2px;
+  background: var(--tertiary-color);
   margin-top: 0.8vw;
   width: 40%;
 }
@@ -61,7 +75,6 @@
   padding: var(--sm-padding) 0;
   display: flex;
   justify-content: space-between;
-  /* align-items: center;    background: #000; */
 }
 
 .leftD,
@@ -80,15 +93,16 @@
   font-size: 1.2vw;
   color: var(--tertiary-color);
   font-family: var(--secondary-font);
+  font-weight: 600;
+  min-width: 100px;
 }
 
 .info h1:nth-child(2) {
-  font-weight: 200;
-  color: white;
+  font-weight: 300;
+  color: #ccc;
 }
 
 .Experience {
-  /* background: yellow; */
   margin-top: 1vw;
   display: flex;
   flex-direction: column;
@@ -114,19 +128,24 @@
 .card {
   display: flex;
   flex-direction: column;
-  gap: 1vw;
+  gap: 0.5vw;
+  background: rgba(0, 29, 54, 0.85);
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(49, 168, 255, 0.3);
 }
 
 .topBar{
-    /* padding: 0px 10px; */
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .topBar h2:nth-child(1){
     color: var(--tertiary-color);
+    font-weight: 700;
 }
 .topBar h2{
-    font-size: 1vw;
+    font-size: 1.1vw;
     font-family: var(--secondary-font);
 }
 
@@ -134,33 +153,39 @@
     text-align: justify;
     font-size: 1vw;
     font-weight: 300;
-    opacity: 0.8;
+    opacity: 0.9;
+    color: #ddd;
     font-family: var(--secondary-font);
+    line-height: 1.5;
 }
+
 .rightDiv{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
-  /* background: yellow; */
   gap: 1vw;
+  width: 35%;
 }
 
 .resumeBox{
   margin-top: 4.5vw;
-  /* padding: var(--sm-padding); */
   height: 60%;
-  /* background: #000; */
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .resumeBox img{
   width: 80%;
-  /* height: 100%; */
+  filter: drop-shadow(0 0 20px rgba(49, 168, 255, 0.2));
+  transition: transform 0.3s ease;
+}
+
+.resumeBox:hover img {
+    transform: scale(1.05);
 }
 
 .bottomBut{
@@ -168,10 +193,12 @@
   justify-content: center;
   align-items: center;
   gap: 2vw;
+  width: 100%;
 }
 .bottomBut img {
   width: 15%;
   animation: rightArrow 5s infinite;
+  filter: invert(1); /* Make sure arrows are white */
 }
 
 @keyframes rightArrow {
@@ -187,22 +214,191 @@
 }
 
 .cvButton{
-  border: 1px solid black;
-  padding: 6px  20px;
-  border-radius: 25px;
+  border: 2px solid var(--tertiary-color);
+  padding: 8px 30px;
+  border-radius: 30px;
   cursor: pointer;
-  transition: ease .5s all;
+  background: rgba(0, 29, 54, 0.8);
+  transition: ease .3s all;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
 }
 
 .cvButton h1{
-  transition: ease 0.5s all;
-  font-size: 1vw;
+  transition: ease 0.3s all;
+  font-size: clamp(14px, 1.1vw, 20px);
   font-family: var(--secondary-font);
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  line-height: 1.1;
 }
 
 .cvButton:hover h1{
-  color: white;
+  color: var(--secondary-color);
 }
 .cvButton:hover{
-  background: var(--secondary-color);
+  background: var(--tertiary-color);
+  box-shadow: 0 0 20px rgba(49, 168, 255, 0.5);
+}
+
+@media (max-width: 1023px) {
+  .outerDiv {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    padding: 12px 16px 20px;
+  }
+
+  .innerDiv {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 18px;
+    height: auto;
+  }
+
+  .leftDiv,
+  .rightDiv {
+    width: 100%;
+  }
+
+  .resumeHeading {
+    margin-bottom: 1rem;
+  }
+
+  .resumeHeading h1 {
+    font-size: 54px;
+  }
+
+  .resumeHeading h2 {
+    font-size: 34px;
+    letter-spacing: 0;
+  }
+
+  .career {
+    border-radius: 14px;
+    padding: 16px;
+  }
+
+  .personalHead {
+    font-size: 24px;
+  }
+
+  .whiteLine {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .personlDetails {
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px 0;
+  }
+
+  .leftD,
+  .rightD {
+    gap: 10px;
+  }
+
+  .info {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .info h1 {
+    font-size: 15px;
+    min-width: 88px;
+  }
+
+  .Experience {
+    margin-top: 8px;
+    gap: 14px;
+  }
+
+  .Experience h1 {
+    font-size: 22px;
+  }
+
+  .exp {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .leftExp,
+  .rightCar {
+    gap: 12px;
+  }
+
+  .card {
+    gap: 10px;
+  }
+
+  .topBar h2 {
+    font-size: 14px;
+  }
+
+  .para p {
+    font-size: 14px;
+  }
+
+  .rightDiv {
+    gap: 14px;
+  }
+
+  .resumeBox {
+    margin-top: 0;
+    height: auto;
+  }
+
+  .resumeBox img {
+    width: min(340px, 75vw);
+  }
+
+  .bottomBut {
+    gap: 14px;
+    justify-content: center;
+  }
+
+  .bottomBut img {
+    width: 34px;
+  }
+
+  .cvButton {
+    padding: 9px 22px;
+  }
+
+  .cvButton h1 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 640px) {
+  .outerDiv {
+    padding: 10px 12px 16px;
+  }
+
+  .resumeHeading h1 {
+    font-size: 42px;
+  }
+
+  .resumeHeading h2 {
+    font-size: 28px;
+  }
+
+  .personalHead {
+    font-size: 21px;
+  }
+
+  .info h1 {
+    font-size: 14px;
+    min-width: 78px;
+  }
+
+  .topBar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
 }
